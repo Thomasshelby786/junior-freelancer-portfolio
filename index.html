@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Freelancer | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+</head>
+<body>
+    <header data-aos="fade-down">
+        <nav>
+            <h1>Freelancer</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" data-aos="zoom-in">
+        <h2>Hi, I'm a Junior Freelancer</h2>
+        <p>I design & build beautiful websites for clients worldwide.</p>
+        <a href="#contact" class="cta-button">Hire Me</a>
+    </section>
+
+    <section id="about" data-aos="fade-right">
+        <h3>About Me</h3>
+        <p>I’m a passionate web developer with a focus on clean, responsive design and smooth user experience. Let's build something amazing together!</p>
+    </section>
+
+    <section id="work" data-aos="fade-up">
+        <h3>My Work</h3>
+        <div class="projects">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-left">
+        <h3>Contact Me</h3>
+        <form onsubmit="sendMessage(); return false;">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+            <textarea placeholder="Your Message" id="message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="form-status"></p>
+        </form>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2025 Junior Freelancer. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function sendMessage() {
+            const status = document.getElementById("form-status");
+            status.innerText = "Message sending simulated (backend not connected).";
+        }
+    </script>
+</body>
+</html>
